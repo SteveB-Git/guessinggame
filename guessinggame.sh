@@ -31,10 +31,9 @@ for ((i=2; i>1; i++));
 do
     echo "How many files are in the current directory?"
     read user_guess
-    echo "You guessed $user_guess"
 
     i=$(check_guess $user_guess)
     [[ $i -eq 1 ]] && echo "too high"
     [[ $i -eq 2 ]] && echo "too low"
-    [[ $i -eq 0 ]] && echo "correct. Congrats"
+    [[ $i -eq 0 ]] && echo "correct. Congratulations"
 done
