@@ -5,7 +5,9 @@ draft_README:
 
 README.md: draft_README guessinggame.sh
 	echo "guessinggame" > README.md
+	echo "" >> README.md
 	date >> README.md
+	echo " " >> README.md
 	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
 
 clean:
