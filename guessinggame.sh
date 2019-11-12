@@ -36,4 +36,8 @@ do
     [[ $i -eq 1 ]] && echo "too high"
     [[ $i -eq 2 ]] && echo "too low"
     [[ $i -eq 0 ]] && echo "correct. Congratulations"
+
+    # If i is 0, meaning the guess is correct, then the "i++" will set it to 1
+    # and the continuing condition of the loop ("i>1") will not be true,
+    #  so the loop will exit.
 done
